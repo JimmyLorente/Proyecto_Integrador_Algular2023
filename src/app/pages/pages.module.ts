@@ -22,6 +22,11 @@ import { PagoComponent } from './pago/pago.component';
   imports: [
     CommonModule,
     PagesRoutingModule
+  ],
+  exports: [
+    DashboardComponent,
+    MoviesComponent,
+    CategoriesComponent
   ]
 })
 export class PagesModule { }
