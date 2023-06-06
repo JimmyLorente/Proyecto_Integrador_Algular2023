@@ -19,7 +19,13 @@ import { HeaderComponent } from './header/header.component';
   ],
   imports: [
     CommonModule,
-    SharedRoutingModule
+  ],
+  exports:[
+    SharedComponent,
+    NavbarComponent,
+    NavleftComponent,
+    FooterComponent,
+    HeaderComponent
   ]
 })
 export class SharedModule { }
