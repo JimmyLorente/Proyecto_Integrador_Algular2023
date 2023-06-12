@@ -8,6 +8,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { CompraComponent } from './compra/compra.component';
 import { PagoComponent } from './pago/pago.component';
+import { SharedModule } from '../shared/shared.module';
+import { NoFoundComponent } from '../no-found/no-found.component';
 
 
 @NgModule({
@@ -17,16 +19,18 @@ import { PagoComponent } from './pago/pago.component';
     DashboardComponent,
     CategoriesComponent,
     CompraComponent,
-    PagoComponent
+    PagoComponent,
+    NoFoundComponent
   ],
   imports: [
     CommonModule,
-    PagesRoutingModule
+    SharedModule,
+    PagesRoutingModule,
   ],
   exports: [
     DashboardComponent,
     MoviesComponent,
-    CategoriesComponent
+    CategoriesComponent,
   ]
 })
 export class PagesModule { }
