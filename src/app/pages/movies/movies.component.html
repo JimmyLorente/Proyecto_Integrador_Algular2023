@@ -1,1 +1,86 @@
-<p>movies works!</p>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detalles de la Película</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        /* Estilos adicionales personalizados */
+        .seat {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            margin: 5px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+        }
+
+        .seat.available {
+            background-color: #bde0ab;
+        }
+
+        .seat.selected {
+            background-color: #ffc107;
+        }
+
+        .seat.unavailable {
+            background-color: #e0e0e0;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Detalles de la Película</h1>
+
+        <!-- Aquí puedes añadir los detalles de la película -->
+        <div>
+            <h2>Título de la Película</h2>
+            <p>Descripción de la película</p>
+            <p>Horarios:</p>
+            <ul>
+                <li>Horario 1</li>
+                <li>Horario 2</li>
+                <li>Horario 3</li>
+                <!-- Añade más horarios según necesites -->
+            </ul>
+        </div>
+
+        <!-- Aquí puedes añadir la selección de asientos -->
+        <div>
+            <h2>Selecciona tus asientos</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Aquí puedes mostrar un plano del cine con los asientos -->
+                    <div>
+                        <div class="seat available">1</div>
+                        <div class="seat available">2</div>
+                        <div class="seat unavailable">3</div>
+                        <div class="seat available">4</div>
+                        <div class="seat available">5</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Aquí puedes mostrar la leyenda de colores para los asientos -->
+                    <div>
+                        <div class="seat available"></div> Disponible
+                        <div class="seat selected"></div> Seleccionado
+                        <div class="seat unavailable"></div> No disponible
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aquí puedes añadir un formulario o cualquier otra interacción para seleccionar los asientos -->
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script>
+        // Código JavaScript adicional (si es necesario)
+    </script>
+</body>
+</html>

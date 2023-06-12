@@ -9,6 +9,7 @@ import { CategoriesComponent } from './categories/categories.component';
 import { CompraComponent } from './compra/compra.component';
 import { PagoComponent } from './pago/pago.component';
 import { SharedModule } from '../shared/shared.module';
+import { NoFoundComponent } from '../no-found/no-found.component';
 
 
 @NgModule({
@@ -18,12 +19,13 @@ import { SharedModule } from '../shared/shared.module';
     DashboardComponent,
     CategoriesComponent,
     CompraComponent,
-    PagoComponent
+    PagoComponent,
+    NoFoundComponent
   ],
   imports: [
     CommonModule,
     SharedModule,
-    PagesRoutingModule
+    PagesRoutingModule,
   ],
   exports: [
     DashboardComponent,
