@@ -1,0 +1,24 @@
+/* .container {
+    background-image: url('https://th.bing.com/th/id/OIP.KpVhdwPwA89WVjLnMAI_pAHaE7?pid=ImgDet&rs=1');
+  background-size: cover;
+  background-position: center;
+  }
+   */
+   h1{
+    font-size:45px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+   }
+   h2{
+    color: rgb(12, 12, 136);
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   }
+   
+   hr{
+    border-color: rgba(255, 111, 28, 0.989);
+   }
+   img{
+    height: 100px;
+   }
+  
